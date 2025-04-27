@@ -17,7 +17,7 @@ class LivroController extends Controller
             $livros = Livro::with(['assunto', 'autores'])->paginate(10)->withQueryString();
 
             $livros->transform(function ($livro) {
-                $livro->autores_nomes = $livro->autores->pluck('nome')->join(', ');
+                $livro->autores_nomes = $livro->autores->pluck('nome')->implode(', ');
                 return $livro;
             });
 
@@ -49,7 +49,11 @@ class LivroController extends Controller
             $livro = Livro::create($request->only(['titulo', 'valor', 'assunto_id']));
 
             if ($request->filled('autores')) {
-                $livro->autores()->sync($request->input('autores'));
+                $autores = is_array($request->input('autores'))
+                    ? $request->input('autores')
+                    : [$request->input('autores')];
+
+                $livro->autores()->sync($autores);
             }
 
             return redirect()->route('livros.index')->with('success', 'Livro cadastrado com sucesso!');

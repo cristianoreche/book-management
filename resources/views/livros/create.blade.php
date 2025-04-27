@@ -60,7 +60,7 @@
                     </small>
                 @else
                     <x-multi-select
-                        name="autores"
+                        name="autores[]"
                         label="Autor(es)"
                         :options="$autores->pluck('nome', 'id')->toArray()"
                         :selected="old('autores', [])"
