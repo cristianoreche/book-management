@@ -1,0 +1,181 @@
+/* =============================================
+   GOOGLE FONTS - Inter
+============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* =============================================
+   VARIÁVEIS GLOBAIS
+============================================= */
+:root {
+    /* Fontes */
+    --font-primary: 'Figtree', sans-serif;
+    --font-mono: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    /* Tamanhos de Fonte */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.5rem;     /* 24px */
+    --font-size-2xl: 2rem;      /* 32px */
+    --font-size-3xl: 3rem;      /* 48px */
+
+    /* Pesos de Fonte */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    /* Cores */
+    --color-primary: #5E81F4;
+    --color-primary-hover: #4469de;
+    --color-danger: #f96782;
+    --color-danger-hover: #de4b66;
+    --color-success: #3eb75e;
+    --color-success-hover: #2aa24a;
+    --color-light: #eef2f4;
+    --color-dark: #1c2b33;
+    --color-gray: #6b7888;
+    --color-white: #ffffff;
+    --color-border: #e5eaec;
+
+    /* Cores de Texto */
+    --color-text: #1c2b33;
+    --color-muted: #6b7888;
+    --color-disabled: #c7ced7;
+    --color-disabled-text: #97a9b3;
+
+    /* Espaçamentos */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem;   /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem;   /* 32px */
+    --space-xl: 3rem;   /* 48px */
+
+    /* Bordas */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+
+    /* Transições */
+    --transition-default: all 0.3s ease-in-out;
+}
+
+/* =============================================
+   RESET E ESTILOS BASE
+============================================= */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Scroll Suave */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Base HTML */
+html {
+    font-size: 16px;
+    font-family: var(--font-primary), sans-serif;
+    color: var(--color-text);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light);
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--font-size-base);
+    font-weight: var(--fw-regular);
+    color: var(--color-text);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: var(--fw-bold);
+    color: var(--color-dark);
+    margin: 0;
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+h5 { font-size: var(--font-size-base); }
+h6 { font-size: var(--font-size-sm); }
+
+/* Parágrafos */
+p {
+    margin: 0 0 var(--space-sm);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+}
+
+/* Links */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition-default);
+}
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* Botões */
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+/* Inputs */
+input, textarea, select, button {
+    font-family: inherit;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Listas */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
