@@ -10,10 +10,8 @@
                 Relatório de Livros por Autor
             </h1>
         </div>
-
         <div class="page__body">
             @include('relatorios._filtros')
-
             <div class="report">
                 @include('relatorios._lista-autores', ['relatorio' => $relatorio])
             </div>

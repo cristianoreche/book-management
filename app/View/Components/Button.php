@@ -1,5 +1,5 @@
 <?php
-// app/View/Components/Button.php
+
 namespace App\View\Components;
 
 use Illuminate\View\Component;

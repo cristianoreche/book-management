@@ -79,14 +79,12 @@
     box-sizing: border-box;
 }
 
-/* Scroll Suave */
 @media (prefers-reduced-motion: no-preference) {
     :root {
         scroll-behavior: smooth;
     }
 }
 
-/* Base HTML */
 html {
     font-size: 16px;
     font-family: var(--font-primary), sans-serif;
@@ -111,7 +109,6 @@ body {
     color: var(--color-text);
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary), sans-serif;
     font-weight: var(--fw-bold);
@@ -126,14 +123,12 @@ h4 { font-size: var(--font-size-lg); }
 h5 { font-size: var(--font-size-base); }
 h6 { font-size: var(--font-size-sm); }
 
-/* Parágrafos */
 p {
     margin: 0 0 var(--space-sm);
     font-size: var(--font-size-base);
     color: var(--color-text);
 }
 
-/* Links */
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -143,7 +138,6 @@ a:hover {
     color: var(--color-primary-hover);
 }
 
-/* Botões */
 button {
     font-family: inherit;
     font-size: inherit;
@@ -154,26 +148,22 @@ button {
     transition: var(--transition-default);
 }
 
-/* Inputs */
 input, textarea, select, button {
     font-family: inherit;
 }
 
-/* Imagens */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Listas */
 ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* Tabelas */
 table {
     border-collapse: collapse;
     width: 100%;
