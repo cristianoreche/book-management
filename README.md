@@ -38,7 +38,7 @@ O Book Management é uma aplicação desenvolvida para realizar o cadastro e ges
 
 ### Backend
 
-    Controllers
+#### Controllers
 
 Manipulação de requisições HTTP.
 - AssuntoController.php 
@@ -46,9 +46,7 @@ Manipulação de requisições HTTP.
 - LivroController.php 
 - RelatorioController.php
 
-
-    Models
-
+#### Models
 
 Representação das entidades do sistema.
 - Autor.php
@@ -57,9 +55,7 @@ Representação das entidades do sistema.
 - AutorLivro.php (pivot)
 - ViewLivroPorAutor.php (view model)
 
-
-    Requests
-
+#### Requests
 
 Validação de dados.
 - AssuntoRequest.php
