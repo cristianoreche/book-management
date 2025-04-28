@@ -64,26 +64,24 @@ Validação de dados.
 
 ### Banco de Dados
 
-    Tabelas
+#### Tabelas
 
 - livros: Armazena informações sobre os livros.
 - autores: Armazena informações sobre os autores.
 - assuntos: Armazena informações sobre os assuntos.
 - autor_livro: Tabela pivot para relacionamento N:N entre autores e livros.
 
-
-    Views
+#### Views
 
 - view_livros_por_autor: Agrupa livros por autor para relatórios.
 
-
-    Producers
+#### Producers
 
 - sp_relatorio_livros_por_autor: Procedure para gerar dados detalhados dos livros por autor.
 
 ### Frontend
 
-    CSS: Estilos modulares na pasta public/css/components
+#### CSS: Estilos modulares na pasta public/css/components
 
 - _alert.css
 - _buttons.css
@@ -91,22 +89,19 @@ Validação de dados.
 - _modal.css
 - _table.css
 
-
-    Reset e Main:
+#### Reset e Main:
 
 - reset.css: Normaliza estilos entre navegadores.
 - main.css: Define estilos globais.
 
-
-    JavaScript: Scripts modulares na pasta public/js
+#### JavaScript: Scripts modulares na pasta public/js
 
 - mask-money.js: Máscara para valores monetários.
 - menu-toggle.js: Menu responsivo.
 - search.js: Barra de busca.
 - modal.js: Modal reutilizável.
 
-
-    Blade Components: Componentes reutilizáveis na pasta resources/views/components
+#### Blade Components: Componentes reutilizáveis na pasta resources/views/components
 
 - alert.blade.php
 - button.blade.php
