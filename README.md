@@ -153,10 +153,6 @@ Para executar este projeto em sua máquina local, você precisará dos seguintes
 - Docker 20.10+ e Docker Compose 2.0+ são usados para criar um ambiente isolado e replicável.
 - Certifique-se de que o Docker está instalado e funcionando corretamente.
 
-#### Git:
-
-- Necessário para clonar o repositório do GitHub.
-
 #### MySQL:
 
 - O banco de dados utilizado no projeto é o MySQL (ou MariaDB).
